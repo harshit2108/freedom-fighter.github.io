@@ -1,0 +1,97 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: century gothic;
+}
+
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('background1.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: blue;
+  padding: 5px 15px;
+  border: 1px solid  transparent;
+  transition: 0.6s ease;
+}
+
+ul li.active a{
+  background-color: #fff;
+  color: blue;
+}
+
+ul li.active a:hover{
+  background-color: black;
+  color: yellow;
+  width: 100%;
+}
+
+ul li a:hover{
+  background-color: black;
+  color: yellow;
+  width: 100%;
+}
+
+.logo img{
+  padding-top: 15px;
+  float: left;
+  width: 130px;
+  height: 40px;
+}
+
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.container{
+  padding: 10px;
+  max-width: 1100px;
+  margin: auto;
+  background: inherit;
+  overflow: auto;
+}
+
+.some{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 330px;
+  height: 230px;
+}
+
+.some img{
+  width: 100%;
+  height: auto;
+}
+
+.center{
+  text-align: center;
+  color: green;
+}
+
+.center a{
+  text-decoration: none;
+  font-color: green;
+  transition: 0.6s;
+}
+
+.center a:hover{
+  background-color: white;
+  color: red;
+}

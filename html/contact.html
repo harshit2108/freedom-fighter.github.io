@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: grey;
+  padding: 20px;
+}
+
+h3{
+  color:yellow;
+  text-align: center;
+  background: grey;
+}
+
+  ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+  }
+
+  ul li{
+    display: inline-block;
+  }
+
+  ul li a{
+    text-decoration: none;
+    color: blue;
+    padding: 5px 15px;
+    border: 1px solid  transparent;
+    transition: 0.6s ease;
+  }
+
+  ul li.active a{
+    background-color: white;
+    color: blue;
+    border: 3px solid Red;
+  }
+
+  ul li.active a:hover{
+    background-color: orange;
+    color: yellow;
+    width: 100%;
+  }
+
+  ul li a:hover{
+    background-color: grey;
+    color: yellow;
+    width: 100%;
+  }
+
+  .logo img{
+    padding-top: 10px;
+    float: left;
+    width: 130px;
+    height: 40px;
+  }
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="C:\Users\mishr\Desktop\Webiste\web\TB.jpg" alt="logo">
+    </div>
+    <ul>
+      <li><a href="ind.html"><strong>Home</strong></a></li>
+      <li><a href="services.html"><strong>Services</strong></a></li>
+    </ul>
+  </header>
+  <br><br><br>
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</header>
+
+</body>
+</html>
